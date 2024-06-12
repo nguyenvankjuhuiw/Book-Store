@@ -1,0 +1,64 @@
+
+
+Web bán sách có các chức năng như sau:
+    gmail: 
+        cuahangsach021@gmail.com
+        password021
+    tích hợp thanh toán:
+        cuahangsach021@gmail.com
+        Password021
+        quản lý giao dich:
+            https://sandbox.vnpayment.vn/merchantv2/
+            https://my.casso.vn/business/8757/bankAcc/overview/8159
+        thẻ test:
+            Ngân hàng	NCB
+            Số thẻ	9704198526191432198
+            Tên chủ thẻ	NGUYEN VAN A
+            Ngày phát hành	07/15
+            Mật khẩu OTP	123456
+    tích hợp PHPMailer:
+        webrapchieuphim@gmail.com
+    trang sách:
+        tìm từ khóa
+    trang xem chi tiết sản phẩm:
+        thông tin sách
+        xem các bình luận
+    trang đăng nhập, đăng ký:
+        thường
+        google
+        facebook 
+        mã hóa mật khẩu 
+        đăng ký xong gửi email thông báo thành công 
+        quên mật khẩu: sử dụng email 
+    trang giỏ hàng: 
+        sửa số lượng 
+        xóa sản phẩm
+        tích chọn để mua hàng (không tích sẽ không mua được hàng)
+        tích tổng tiền các hàng được tích chọn
+        kiểm tra số lượng người dùng đặt
+        số lượng đặt trước vượt quá số lượng có sẽ có thông báo và ko đặt đc sản phẩm đó
+        không nhập đc số lượng sản phẩm, chỉ có tăng hoặc giảm
+    Thông tin đặt hàng:
+        các ô nhập thông tin người nhận không được để trống
+        chọn loại vận chuyển, tự động tính tiền theo từng loại vận chuyển
+            khi đơn hàng >= 500000 thì vận chuyển miễn phí 
+        có 2 hình thức thanh toán:
+            thanh toán nhận hàng sẽ đặt được hàng luôn
+            thanh toán trực tuyến được liên kết với cổng vnpay để tiến hành thanh toán
+            thanh toán qua mã qr 
+        đặt hàng thành công thì gửi email 
+    Danh sách đơn hàng của người mua:
+        xem được từng loại trạng thái đơn hàng
+        xem chi tiết đơn hàng: thông tin người nhận, thông tin hàng, tổng tiền
+        đánh giá sản phẩm
+    Trang quản lý người dùng:
+        tài khoản người dùng: có thể cập nhật lại thông tin người dùng
+        thoát tài khoản
+        đổi mật khẩu: chỉ dành cho khách hàng đăng kí thường
+
+    sửa
+        trạng thái chờ xác nhận không trừ số lượng hàng, chỉ chuyển sang trạng thái đang chuẩn bị mới trừ đc 
+        đơn hàng bị hủy ở trạng thái chờ xác nhận sẽ được chuyển trực tiếp sang đơn hàng bị hủy
+        Chỉnh sql injection: tìm kiếm, đăng nhập, đăng kí, đổi mật khẩu 
+        
+
